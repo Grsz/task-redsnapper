@@ -1,0 +1,126 @@
+html > *{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: rgb(70, 38, 129);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5vw;
+}
+i{
+    margin: auto .2em;
+    cursor: pointer;
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+h1{
+    font-size: 200%;
+}
+h2{
+    font-weight: 400;
+}
+h4{
+    font-size: 70%;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.backBut{
+    position: absolute;
+    color: white;
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.imgWrapper{
+    width: 100vw;
+    height: 35vh;
+    background-image: url("Steve.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    background-color: white;
+    border-radius: 2vh;
+    top: -2vh;
+    position: relative;
+    padding: 0 1.5em;
+}
+section, .follow, .data, .category{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+section, .follow{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+section:not(:last-child){
+    padding: 1em 0;
+    border-bottom: 1px solid;
+}
+.header, .dataWrapper{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.follow{
+    width: 100%;
+    margin-top: 0.5em;
+}
+.data{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.categories{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.title{
+    padding: 2em 0 1em;
+}
+.category{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1em 0;
+    border-bottom: solid 1px;
+}
+@media screen and (min-device-width: 600px){
+    body{
+        font-size: 3vw;
+    }
+    .imgWrapper{
+        height: 40vh;
+    }
+}
+@media screen and (min-device-width: 768px){
+    body{
+        font-size: 2vw;
+    }
+    .imgWrapper{
+        height: 45vh;
+    }
+}
+@media screen and (min-device-width: 1024px){
+    body{
+        font-size: 1.5vw;
+    }
+    .imgWrapper{
+        height: 50vh;
+    }
+}
